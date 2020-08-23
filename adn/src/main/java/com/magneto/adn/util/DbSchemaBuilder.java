@@ -1,7 +1,9 @@
 package com.magneto.adn.util;
 
+import com.magneto.adn.service.StatService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
@@ -16,16 +18,28 @@ public class DbSchemaBuilder {
     private static final Logger logger = LoggerFactory.getLogger(DbSchemaBuilder.class);
 
     private final DynamoDbClient dbClient;
+    private final StatService statService;
 
-    public DbSchemaBuilder() {
+
+    @Autowired
+    public DbSchemaBuilder(StatService statService) {
+        this.statService = statService;
         this.dbClient = DynamoDbClient.builder()
                 .region(Region.US_EAST_2)
                 .build();
     }
 
     @PostConstruct
-    public void CreateDb() {
+    public void initializeEnvironment() {
+        CreateDb();
+        initializeStats();
+    }
 
+    private void initializeStats() {
+        statService.get();
+    }
+
+    private void CreateDb() {
         var tableNames= getAllTableNames();
         if(tableNames == null || tableNames.isEmpty()) {
             CreateDnaTable();

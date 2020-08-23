@@ -6,11 +6,8 @@ import org.springframework.stereotype.Repository;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.*;
-import software.amazon.awssdk.services.polly.internal.presigner.DefaultPollyPresigner;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
 @Repository
 public class DnaRepository {
@@ -29,10 +26,10 @@ public class DnaRepository {
         values.put(Constants.DNA_TABLE_KEY, AttributeValue.builder().
                 s(dnaEntity.getId())
                 .build());
-        values.put(Constants.DNA_TABLE_DNASAMPLE, AttributeValue.builder()
+        values.put(Constants.DNA_TABLE_DNA_SAMPLE, AttributeValue.builder()
                 .ss(dnaEntity.getDnaSequence())
                 .build());
-        values.put(Constants.DNA_TABLE_ISMUTANT, AttributeValue.builder()
+        values.put(Constants.DNA_TABLE_IS_MUTANT, AttributeValue.builder()
                 .bool(dnaEntity.isMutant())
                 .build());
 
@@ -51,12 +48,12 @@ public class DnaRepository {
         var returnedItem = this.dbClient.getItem(request).item();
 
         if (returnedItem != null && !returnedItem.isEmpty()) {
-            var dnaSampleList = returnedItem.get(Constants.DNA_TABLE_DNASAMPLE).ss();
+            var dnaSampleList = returnedItem.get(Constants.DNA_TABLE_DNA_SAMPLE).ss();
 
             var dnaSample = new String[dnaSampleList.size()];
             dnaSample = dnaSampleList.toArray(dnaSample);
 
-            return new Dna(dnaSample, returnedItem.get(Constants.DNA_TABLE_ISMUTANT).bool());
+            return new Dna(dnaSample, returnedItem.get(Constants.DNA_TABLE_IS_MUTANT).bool());
         } else {
             return null;
         }
@@ -91,7 +88,7 @@ public class DnaRepository {
         var attributeNames = new HashMap<String, String>();
         var attributeValues = new HashMap<String, AttributeValue>();
 
-        attributeNames.put("#isMutant", Constants.DNA_TABLE_ISMUTANT);
+        attributeNames.put("#isMutant", Constants.DNA_TABLE_IS_MUTANT);
         attributeValues .put(":isMutant", AttributeValue.builder().bool(isMutant).build());
 
         var scanRequest = ScanRequest.builder()

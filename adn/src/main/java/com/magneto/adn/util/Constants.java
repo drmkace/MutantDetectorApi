@@ -7,9 +7,8 @@ public final class Constants {
 
     // Table Fields
     public static final String DNA_TABLE_KEY = "Id";
-    public static final String DNA_TABLE_DNASAMPLE = "DnaSample";
-    public static final String DNA_TABLE_ISMUTANT = "IsMutant";
-    public static final String STAT_TABLE_KEY = "Id";
-    public static final String STAT_TABLE_HUMAN_COUNT = "HumanCount";
-    public static final String STAT_TABLE_MUTANT_COUNT = "MutantCount";
+    public static final String DNA_TABLE_DNA_SAMPLE = "DnaSample";
+    public static final String DNA_TABLE_IS_MUTANT = "IsMutant";
+    public static final String STAT_HUMAN_COUNT = "HumanCount";
+    public static final String STAT_MUTANT_COUNT = "MutantCount";
 }

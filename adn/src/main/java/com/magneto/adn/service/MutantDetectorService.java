@@ -10,9 +10,9 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class MutantDetectorService {
-    private MutantDetector mutantDetector;
-    private DnaRepository dnaRepository;
-    private StatRepository statRepository;
+    private final MutantDetector mutantDetector;
+    private final DnaRepository dnaRepository;
+    private final StatRepository statRepository;
 
     @Autowired
     public MutantDetectorService(
@@ -32,18 +32,16 @@ public class MutantDetectorService {
 
         if(dnaEntity == null) {
             isMutant = this.mutantDetector.isMutant(dnaSample);
-            var stat = statRepository.get();
-            if(isMutant) {
-                stat.incrementMutantCount();
-            }
-            else {
-                stat.incrementHumanCount();
-            }
 
             var newDnaEntity = new Dna(dnaSample, isMutant);
             var dnaSaved = dnaRepository.save(newDnaEntity);
             if(dnaSaved) {
-                statRepository.saveOrUdate(stat);
+                if(isMutant) {
+                    this.statRepository.IncrementMutantCount();
+                }
+                else {
+                    this.statRepository.IncrementHumanCount();
+                }
             }
             else
             {

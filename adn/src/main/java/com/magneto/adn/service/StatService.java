@@ -8,8 +8,8 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class StatService {
-    private StatRepository statRepository;
-    private DnaRepository dnaRepository;
+    private final StatRepository statRepository;
+    private final DnaRepository dnaRepository;
 
     @Autowired
     public StatService(StatRepository statRepository, DnaRepository dnaRepository) {
@@ -17,14 +17,17 @@ public class StatService {
         this.dnaRepository = dnaRepository;
     }
 
-
-    public void saveOrUpdate(Stat entity) {
-        this.statRepository.saveOrUdate(entity);
-    }
-
     public Stat get() {
-        var humanCount =  dnaRepository.getHumanCount();
-        var mutantCount =  dnaRepository.getMutantCount();
-        return new Stat(humanCount, mutantCount);
+        var stat = statRepository.tryGet();
+        if(stat != null) {
+            return stat;
+        } else {
+            var humanCount =  dnaRepository.getHumanCount();
+            var mutantCount =  dnaRepository.getMutantCount();
+            stat = new Stat(humanCount, mutantCount);
+
+            this.statRepository.save(stat);
+            return  stat;
+        }
     }
 }

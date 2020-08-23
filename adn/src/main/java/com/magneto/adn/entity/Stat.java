@@ -24,12 +24,4 @@ public class Stat {
     public void setMutantCount(long mutantCount) {
         this.mutantCount = mutantCount;
     }
-
-    public void incrementHumanCount() {
-        this.humanCount++;
-    }
-
-    public void incrementMutantCount() {
-        this.mutantCount++;
-    }
 }
