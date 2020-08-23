@@ -1,7 +1,6 @@
 package com.magneto.adn.entity;
 
 import java.util.Arrays;
-import java.util.Objects;
 
 public class Dna {
     private String[] dnaSequence;

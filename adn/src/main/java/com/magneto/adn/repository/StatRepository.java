@@ -5,12 +5,7 @@ import com.magneto.adn.util.Constants;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class StatRepository extends BaseRepository {
-
-    @Override
-    protected String getTableName() {
-        return Constants.STAT_TABLE_NAME;
-    }
+public class StatRepository {
 
     public void saveOrUdate(Stat entity) {
         if(this.exists(entity)) {
