@@ -1,6 +1,6 @@
-package com.magneto.adn.util;
+package com.magneto.dna.config;
 
-import com.magneto.adn.service.StatService;
+import com.magneto.dna.service.StatService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

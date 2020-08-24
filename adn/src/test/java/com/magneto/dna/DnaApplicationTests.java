@@ -1,10 +1,10 @@
-package com.magneto.adn;
+package com.magneto.dna;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
-class AdnApplicationTests {
+//@SpringBootTest
+class DnaApplicationTests {
 
 	@Test
 	void contextLoads() {

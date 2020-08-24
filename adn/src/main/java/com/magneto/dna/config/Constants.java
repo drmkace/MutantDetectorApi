@@ -1,9 +1,8 @@
-package com.magneto.adn.util;
+package com.magneto.dna.config;
 
 public final class Constants {
     // Table Names
     public static final String DNA_TABLE_NAME = "Dna";
-    public static final String STAT_TABLE_NAME = "Stat";
 
     // Table Fields
     public static final String DNA_TABLE_KEY = "Id";

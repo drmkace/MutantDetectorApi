@@ -1,7 +1,7 @@
-package com.magneto.adn.repository;
+package com.magneto.dna.repository;
 
-import com.magneto.adn.entity.Stat;
-import com.magneto.adn.util.Constants;
+import com.magneto.dna.entity.Stat;
+import com.magneto.dna.config.Constants;
 import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;

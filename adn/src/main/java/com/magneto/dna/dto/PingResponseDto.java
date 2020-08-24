@@ -1,4 +1,4 @@
-package com.magneto.adn.dto;
+package com.magneto.dna.dto;
 
 public class PingResponseDto {
     private String restApiStatus;

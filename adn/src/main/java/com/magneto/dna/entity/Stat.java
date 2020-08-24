@@ -1,4 +1,4 @@
-package com.magneto.adn.entity;
+package com.magneto.dna.entity;
 
 public class Stat {
     private long humanCount;

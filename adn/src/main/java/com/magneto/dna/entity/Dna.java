@@ -1,4 +1,4 @@
-package com.magneto.adn.entity;
+package com.magneto.dna.entity;
 
 import java.util.Arrays;
 

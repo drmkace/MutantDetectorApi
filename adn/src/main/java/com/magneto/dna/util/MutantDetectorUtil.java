@@ -1,4 +1,4 @@
-package com.magneto.adn.util;
+package com.magneto.dna.util;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -8,12 +8,12 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 @Component
-public class MutantDetector {
+public class MutantDetectorUtil {
     private final static Pattern MUTANT_PATTERN = Pattern.compile("A{4}|T{4}|C{4}|G{4}");
     private final static int MINIMUM_MUTANT_MATCH_COUNT = 2;
     private final static int MATCH_LENGTH = 4;
 
-    private static final Logger logger = LoggerFactory.getLogger(MutantDetector.class);
+    private static final Logger logger = LoggerFactory.getLogger(MutantDetectorUtil.class);
 
     public boolean isMutant(String[] dna) {
         var matchCount = this.getHorizontalMatchCount(dna);

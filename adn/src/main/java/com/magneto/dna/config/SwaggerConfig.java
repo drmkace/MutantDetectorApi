@@ -1,4 +1,4 @@
-package com.magneto.adn.util;
+package com.magneto.dna.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

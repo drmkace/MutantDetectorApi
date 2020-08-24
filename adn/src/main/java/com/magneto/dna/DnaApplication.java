@@ -1,13 +1,13 @@
-package com.magneto.adn;
+package com.magneto.dna;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AdnApplication {
+public class DnaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AdnApplication.class, args);
+		SpringApplication.run(DnaApplication.class, args);
 	}
 
 }

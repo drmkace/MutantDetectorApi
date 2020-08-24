@@ -1,4 +1,4 @@
-package com.magneto.adn.exception;
+package com.magneto.dna.exception;
 
 public class InvalidDnaException extends Exception {
 }

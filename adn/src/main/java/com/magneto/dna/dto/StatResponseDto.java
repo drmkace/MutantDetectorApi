@@ -1,4 +1,4 @@
-package com.magneto.adn.dto;
+package com.magneto.dna.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -10,7 +10,7 @@ public class StatResponseDto {
     public StatResponseDto(long humanCount, long mutantCount) {
         this.humanCount = humanCount;
         this.mutantCount = mutantCount;
-        this.ratio = (float)this.mutantCount / (float)this.humanCount ;
+        this.ratio = this.humanCount != 0 ? (float)this.mutantCount / (float)this.humanCount : this.mutantCount;
     }
 
     @JsonProperty("count_human_dna")
@@ -18,25 +18,13 @@ public class StatResponseDto {
         return humanCount;
     }
 
-    public void setHumanCount(long humanCount) {
-        this.humanCount = humanCount;
-    }
-
     @JsonProperty("count_mutant_dna")
     public long getMutantCount() {
         return mutantCount;
     }
 
-    public void setMutantCount(long mutantCount) {
-        this.mutantCount = mutantCount;
-    }
-
-    @JsonProperty("ration")
+    @JsonProperty("ratio")
     public float getRatio() {
         return ratio;
-    }
-
-    public void setRatio(float ratio) {
-        this.ratio = ratio;
     }
 }

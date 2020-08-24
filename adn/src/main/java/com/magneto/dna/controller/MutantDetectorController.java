@@ -1,16 +1,15 @@
-package com.magneto.adn.controller;
+package com.magneto.dna.controller;
 
-import com.magneto.adn.dto.DnaSampleRequestDto;
-import com.magneto.adn.dto.PingResponseDto;
-import com.magneto.adn.exception.InvalidDnaException;
-import com.magneto.adn.service.MutantDetectorService;
-import com.magneto.adn.util.DbSchemaBuilder;
+import com.magneto.dna.dto.DnaSampleRequestDto;
+import com.magneto.dna.dto.PingResponseDto;
+import com.magneto.dna.exception.InvalidDnaException;
+import com.magneto.dna.service.MutantDetectorService;
+import com.magneto.dna.config.DbSchemaBuilder;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @RestController
 public class MutantDetectorController {

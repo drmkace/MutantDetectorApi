@@ -1,25 +1,29 @@
-package com.magneto.adn.service;
+package com.magneto.dna.service;
 
-import com.magneto.adn.entity.Dna;
-import com.magneto.adn.exception.InvalidDnaException;
-import com.magneto.adn.repository.DnaRepository;
-import com.magneto.adn.repository.StatRepository;
-import com.magneto.adn.util.MutantDetector;
+import com.magneto.dna.entity.Dna;
+import com.magneto.dna.exception.InvalidDnaException;
+import com.magneto.dna.repository.DnaRepository;
+import com.magneto.dna.repository.StatRepository;
+import com.magneto.dna.util.MutantDetectorUtil;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class MutantDetectorService {
-    private final MutantDetector mutantDetector;
+    private static final Logger logger = LoggerFactory.getLogger(MutantDetectorService.class);
+
+    private final MutantDetectorUtil mutantDetectorUtil;
     private final DnaRepository dnaRepository;
     private final StatRepository statRepository;
 
     @Autowired
     public MutantDetectorService(
-            MutantDetector mutantDetector,
+            MutantDetectorUtil mutantDetectorUtil,
             DnaRepository dnaRepository,
             StatRepository statRepository) {
-        this.mutantDetector = mutantDetector;
+        this.mutantDetectorUtil = mutantDetectorUtil;
         this.dnaRepository = dnaRepository;
         this.statRepository = statRepository;
     }
@@ -31,7 +35,7 @@ public class MutantDetectorService {
         var dnaEntity = this.dnaRepository.getById(dnaToFind.getId());
 
         if(dnaEntity == null) {
-            isMutant = this.mutantDetector.isMutant(dnaSample);
+            isMutant = this.mutantDetectorUtil.isMutant(dnaSample);
 
             var newDnaEntity = new Dna(dnaSample, isMutant);
             var dnaSaved = dnaRepository.save(newDnaEntity);
@@ -45,7 +49,7 @@ public class MutantDetectorService {
             }
             else
             {
-                //TODO: Throw Exception
+                logger.error("The Dna Entity could not be saved");
             }
         } else {
             isMutant = dnaEntity.isMutant();

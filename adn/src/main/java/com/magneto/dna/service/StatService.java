@@ -1,8 +1,8 @@
-package com.magneto.adn.service;
+package com.magneto.dna.service;
 
-import com.magneto.adn.entity.Stat;
-import com.magneto.adn.repository.DnaRepository;
-import com.magneto.adn.repository.StatRepository;
+import com.magneto.dna.entity.Stat;
+import com.magneto.dna.repository.DnaRepository;
+import com.magneto.dna.repository.StatRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
