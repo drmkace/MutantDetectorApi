@@ -12,7 +12,7 @@ import java.util.HashMap;
 @Repository
 public class DnaRepository {
 
-    private final DynamoDbClient dbClient;
+    private DynamoDbClient dbClient;
 
     public DnaRepository() {
         this.dbClient = DynamoDbClient.builder()
@@ -75,9 +75,6 @@ public class DnaRepository {
         try {
             this.dbClient.putItem(request);
             return true;
-        } catch (ResourceNotFoundException ex) {
-            //TODO: Log Exception
-            return false;
         } catch (DynamoDbException ex) {
             //TODO: Log Exception
             return false;
