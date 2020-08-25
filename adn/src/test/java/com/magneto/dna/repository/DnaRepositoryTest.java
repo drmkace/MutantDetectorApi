@@ -10,10 +10,8 @@ import org.mockito.junit.MockitoJUnitRunner;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.*;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.Map;
 
 import static org.mockito.Mockito.*;
 
@@ -152,10 +150,8 @@ public class DnaRepositoryTest {
     @Test
     public void getHumanCountThrowDynamoDbException() {
         //Conditions
-        var scanResponseMock = mock(ScanResponse.class);
 
         when(dbClient.scan(any(ScanRequest.class))).thenThrow(DynamoDbException.class);
-        when(scanResponseMock.count()).thenReturn(10);
 
         //Test
         var count = dnaRepository.getHumanCount();
@@ -167,10 +163,8 @@ public class DnaRepositoryTest {
     @Test
     public void getMutantCountThrowDynamoDbException() {
         //Conditions
-        var scanResponseMock = mock(ScanResponse.class);
 
         when(dbClient.scan(any(ScanRequest.class))).thenThrow(DynamoDbException.class);
-        when(scanResponseMock.count()).thenReturn(10);
 
         //Test
         var count = dnaRepository.getMutantCount();
