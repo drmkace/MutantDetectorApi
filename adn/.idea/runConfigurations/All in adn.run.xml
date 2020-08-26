@@ -2,7 +2,7 @@
   <configuration default="false" name="All in Dna" type="JUnit" factoryName="JUnit">
     <module name="adn" />
     <shortenClasspath name="MANIFEST" />
-    <useClassPathOnly /> 
+    <useClassPathOnly />
     <extension name="coverage" runner="jacoco">
       <pattern>
         <option name="PATTERN" value="com.magneto.dna.*" />
