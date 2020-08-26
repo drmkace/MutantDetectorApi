@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c7b9dbbb-e68d-4fee-ad4a-8764445732ed" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Users\FernandoAcevedo\.m2\wrapper\dists\apache-maven-3.6.3-bin\1iopthnavndlasol9gbrbg6bf2\apache-maven-3.6.3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1gMseTYvIgUx9MDAP0heIlvDsf1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea/runConfigurations" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.magneto.dna.repository" />
+      <recent name="com.magneto.dna.controller" />
+      <recent name="com.magneto.adn.repository" />
+      <recent name="com.magneto.adn.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\varios\meli\src\MutantDetectorApi\adn\.idea\runConfigurations" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.All in Dna">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-14" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.magneto.dna.DnaApplication" />
+      <shortenClasspath name="MANIFEST" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <shortenClasspath name="MANIFEST" />
+      <useClassPathOnly />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.DnaApplication" />
+      <item itemvalue="JUnit.All in Dna" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c7b9dbbb-e68d-4fee-ad4a-8764445732ed" name="Default Changelist" comment="" />
+      <created>1597935894903</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597935894903</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="453" y="0" width="643" height="824" key="#&lt;template&gt;_of_Application" timestamp="1598391824618">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="453" y="0" width="643" height="824" key="#&lt;template&gt;_of_Application/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598218374125" />
+    <state x="453" y="0" key="#&lt;template&gt;_of_Application/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598391824618" />
+    <state x="364" y="0" key="#&lt;template&gt;_of_JUnit" timestamp="1598303041789">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="364" y="0" key="#&lt;template&gt;_of_JUnit/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598303041789" />
+    <state x="484" y="32" width="586" height="784" key="#AdnApplication" timestamp="1598218575229">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="484" y="32" width="586" height="784" key="#AdnApplication/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598218575229" />
+    <state x="364" y="0" key="#All_in_adn" timestamp="1598302983051">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="364" y="0" key="#All_in_adn/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598302983051" />
+    <state x="540" y="81" key="#Auto_Import" timestamp="1598206998045">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="540" y="81" key="#Auto_Import/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598206998045" />
+    <state x="364" y="32" key="#MutantDetectorServiceTest" timestamp="1598302568066">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="364" y="32" key="#MutantDetectorServiceTest/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598302568066" />
+    <state x="249" y="0" key="#Project_Structure" timestamp="1598387248270">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="#Project_Structure/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598217279767" />
+    <state x="249" y="0" key="#Project_Structure/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598387248270" />
+    <state x="184" y="105" width="1281" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598468246094">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="184" y="105" width="1281" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598468246094" />
+    <state x="184" y="105" width="1172" height="689" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598457460117" />
+    <state x="468" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598361598669">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="468" y="214" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598361598669" />
+    <state x="517" y="249" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1598467545977">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="517" y="249" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598467545977" />
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1598220390630">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598220390630" />
+    <state x="478" y="106" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1598195683973" />
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598126517462" />
+    <state x="498" y="188" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1598453862333">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="498" y="188" key="#com.intellij.ide.util.PackageChooserDialog/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598453862333" />
+    <state x="505" y="202" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1598453850571">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="505" y="202" key="#com.intellij.ide.util.TreeClassChooserDialog/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598218367260" />
+    <state x="505" y="202" key="#com.intellij.ide.util.TreeClassChooserDialog/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598453850571" />
+    <state x="340" y="278" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1598322931127">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="408" y="337" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598209541870" />
+    <state x="340" y="278" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1280.680@0.0.1280.680" timestamp="1598322931127" />
+    <state x="551" y="281" width="433" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1598039801668">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="551" y="281" width="433" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598039801668" />
+    <state x="420" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1598307427727">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="506" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598219467051" />
+    <state x="420" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598307427727" />
+    <state x="372" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598194081114">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="372" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1598194081114" />
+    <state x="524" y="115" key="#xdebugger.evaluate" timestamp="1598453639487">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="524" y="115" key="#xdebugger.evaluate/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598210504986" />
+    <state x="524" y="115" key="#xdebugger.evaluate/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598453639487" />
+    <state width="528" height="531" key="DebuggerActiveHint" timestamp="1598451139892">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="440" height="438" key="DebuggerActiveHint/0.0.1280.680@0.0.1280.680" timestamp="1598107751685" />
+    <state width="528" height="531" key="DebuggerActiveHint/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598451139892" />
+    <state x="555" y="167" key="FileChooserDialogImpl" timestamp="1598218328604">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="555" y="167" key="FileChooserDialogImpl/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598218328604" />
+    <state width="1493" height="286" key="GridCell.Tab.0.bottom" timestamp="1598465906965">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="286" key="GridCell.Tab.0.bottom/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598465906965" />
+    <state width="1237" height="277" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1598380503360" />
+    <state width="1493" height="286" key="GridCell.Tab.0.bottom/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598458608718" />
+    <state width="1493" height="286" key="GridCell.Tab.0.center" timestamp="1598465906965">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="286" key="GridCell.Tab.0.center/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598465906965" />
+    <state width="1237" height="277" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1598380503360" />
+    <state width="1493" height="286" key="GridCell.Tab.0.center/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598458608718" />
+    <state width="1493" height="286" key="GridCell.Tab.0.left" timestamp="1598465906965">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="286" key="GridCell.Tab.0.left/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598465906965" />
+    <state width="1237" height="277" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1598380503360" />
+    <state width="1493" height="286" key="GridCell.Tab.0.left/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598458608717" />
+    <state width="1493" height="286" key="GridCell.Tab.0.right" timestamp="1598465906965">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="286" key="GridCell.Tab.0.right/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598465906965" />
+    <state width="1237" height="277" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1598380503360" />
+    <state width="1493" height="286" key="GridCell.Tab.0.right/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598458608718" />
+    <state width="1493" height="267" key="GridCell.Tab.1.bottom" timestamp="1598457815186">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="746" height="221" key="GridCell.Tab.1.bottom/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598221321773" />
+    <state width="1237" height="277" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1598380503360" />
+    <state width="1493" height="267" key="GridCell.Tab.1.bottom/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598457815186" />
+    <state width="1493" height="267" key="GridCell.Tab.1.center" timestamp="1598457815186">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="746" height="221" key="GridCell.Tab.1.center/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598221321773" />
+    <state width="1237" height="277" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1598380503360" />
+    <state width="1493" height="267" key="GridCell.Tab.1.center/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598457815186" />
+    <state width="1493" height="267" key="GridCell.Tab.1.left" timestamp="1598457815186">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="746" height="221" key="GridCell.Tab.1.left/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598221321773" />
+    <state width="1237" height="277" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1598380503360" />
+    <state width="1493" height="267" key="GridCell.Tab.1.left/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598457815186" />
+    <state width="1493" height="267" key="GridCell.Tab.1.right" timestamp="1598457815186">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="746" height="221" key="GridCell.Tab.1.right/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598221321773" />
+    <state width="1237" height="277" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1598380503360" />
+    <state width="1493" height="267" key="GridCell.Tab.1.right/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598457815186" />
+    <state x="146" y="0" key="Maven.ArtifactSearchDialog" timestamp="1598448917156">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="146" y="0" key="Maven.ArtifactSearchDialog/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598209861838" />
+    <state x="122" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.680@0.0.1280.680" timestamp="1598380402887" />
+    <state x="146" y="0" key="Maven.ArtifactSearchDialog/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598448917156" />
+    <state x="584" y="346" key="ReplaceDuplicatesPrompt" timestamp="1597949377710">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="584" y="346" key="ReplaceDuplicatesPrompt/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1597949377710" />
+    <state x="277" y="57" key="SettingsEditor" timestamp="1598467638982">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="57" key="SettingsEditor/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598467638982" />
+    <state x="584" y="190" key="chooseDestDirectoryDialog" timestamp="1598472157299">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="584" y="190" key="chooseDestDirectoryDialog/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598472157299" />
+    <state x="375" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1597952373074">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="375" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1597952373074" />
+    <state x="303" y="141" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1598219811460">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="303" y="141" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598219811460" />
+    <state x="0" y="167" width="968" height="502" key="dock-window-1" timestamp="1598193499700">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="0" y="167" width="968" height="502" key="dock-window-1/0.0.1280.680@0.0.1280.680" timestamp="1598193499700" />
+    <state x="499" y="163" key="extract.method.dialog" timestamp="1598463556246">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="163" key="extract.method.dialog/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598463556246" />
+    <state x="499" y="163" key="extract.method.dialog/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1597953548343" />
+    <state x="478" y="11" width="579" height="801" key="find.popup" timestamp="1598399986134">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="478" y="11" width="579" height="801" key="find.popup/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598399986134" />
+    <state x="562" y="160" key="refactoring.ChangeSignatureDialog" timestamp="1597938740061">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="562" y="160" key="refactoring.ChangeSignatureDialog/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1597938740061" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1598456301526">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598456301526" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1598450500900">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="807" height="679" key="search.everywhere.popup/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598216485672" />
+    <state x="359" y="120" width="672" height="560" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1598379380905" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598450500900" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/magneto/dna/config/DbSchemaBuilder.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/magneto/dna/repository/StatRepositoryRedisNoWork.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/magneto/dna/repository/StatRepositoryRedisNoWork.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/magneto/dna/repository/StatRepositoryTest.java</url>
+          <line>101</line>
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/magneto/dna/repository/StatRepository.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/magneto/dna/repository/StatRepository.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/magneto/dna/repository/StatRepository.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/magneto/dna/repository/StatRepository.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/magneto/dna/repository/StatRepository.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="environment.getProperty(&quot;dynamodb.region&quot;)" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/adn$All_in_adn.ic" NAME="All in adn Coverage Results" MODIFIED="1598453804165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/adn$All_in_adn.exec" NAME="All in adn Coverage Results" MODIFIED="1598464942817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.magneto.dna.*</FILTER>
+      <EXCLUDED_FILTER>com.magneto.dna.config.*</EXCLUDED_FILTER>
+      <EXCLUDED_FILTER>com.magneto.dna.dto.*</EXCLUDED_FILTER>
+      <EXCLUDED_FILTER>com.magneto.dna.entity.*</EXCLUDED_FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/adn$com_magneto_dna_service_in_adn.ic" NAME="com.magneto.dna.service in adn Coverage Results" MODIFIED="1598309587728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.magneto.dna.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/adn$MutantDetectorServiceTest_TestDnaExistingIsMutantTrue.ic" NAME="MutantDetectorServiceTest.TestDnaExistingIsMutantTrue Coverage Results" MODIFIED="1598303078677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.magneto.adn.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/adn$MutantDetectorServiceTest.ic" NAME="MutantDetectorServiceTest Coverage Results" MODIFIED="1598302460973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.magneto.adn.service.*</FILTER>
+    </SUITE>
+  </component>
+</project>
