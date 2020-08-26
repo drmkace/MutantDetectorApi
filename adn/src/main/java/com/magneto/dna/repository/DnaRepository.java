@@ -2,6 +2,10 @@ package com.magneto.dna.repository;
 
 import com.magneto.dna.entity.Dna;
 import com.magneto.dna.config.Constants;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Repository;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
@@ -12,12 +16,22 @@ import java.util.HashMap;
 @Repository
 public class DnaRepository {
 
+    private static final Logger logger = LoggerFactory.getLogger(DnaRepository.class);
+
     private DynamoDbClient dbClient;
 
     public DnaRepository() {
-        this.dbClient = DynamoDbClient.builder()
-                .region(Region.US_EAST_2)
+/*
+        if(env.getProperty(Constants.CONF_DYNAMODB_REGION) != null) {
+            this.dbClient = DynamoDbClient.builder()
+                .region(Region.of(env.getProperty(Constants.CONF_DYNAMODB_REGION)))
                 .build();
+        } else {
+*/
+        this.dbClient = DynamoDbClient.builder()
+                    .region(Region.US_EAST_2)
+                    .build();
+//        }
     }
 
     public boolean save(Dna dnaEntity) {
@@ -76,7 +90,7 @@ public class DnaRepository {
             this.dbClient.putItem(request);
             return true;
         } catch (DynamoDbException ex) {
-            //TODO: Log Exception
+            logger.error(ex.getMessage(), ex);
             return false;
         }
     }
@@ -98,7 +112,7 @@ public class DnaRepository {
             var response = this.dbClient.scan(scanRequest);
             return  response.count();
         } catch (DynamoDbException ex) {
-            // TODO: log Error
+            logger.error(ex.getMessage(), ex);
             return 0;
         }
     }

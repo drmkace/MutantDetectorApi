@@ -35,12 +35,9 @@ public class MutantDetectorServiceTest {
     public void TestExistingDnaIsMutantTrue() {
         // Conditions
         var dnaToTestMock = mock(Dna.class);
-        when(dnaRepositoryMock.getById(any()))
-            .thenReturn(dnaToTestMock);
-        when(dnaToTestMock.isMutant())
-            .thenReturn(true);
-        when(dnaToTestMock.getDnaSequence())
-                .thenReturn(SAMPLE_MUTANT_DNA);
+        when(dnaRepositoryMock.getById(any())).thenReturn(dnaToTestMock);
+        when(dnaToTestMock.isMutant()).thenReturn(true);
+        when(dnaToTestMock.getDnaSequence()).thenReturn(SAMPLE_MUTANT_DNA);
 
         // Test
         try {
@@ -57,12 +54,9 @@ public class MutantDetectorServiceTest {
     public void TestExistingDnaIsMutantFalse() {
         // Conditions
         var dnaToTestMock = mock(Dna.class);
-        when(dnaRepositoryMock.getById(any()))
-                .thenReturn(dnaToTestMock);
-        when(dnaToTestMock.isMutant())
-                .thenReturn(false);
-        when(dnaToTestMock.getDnaSequence())
-                .thenReturn(SAMPLE_HUMAN_DNA);
+        when(dnaRepositoryMock.getById(any())).thenReturn(dnaToTestMock);
+        when(dnaToTestMock.isMutant()).thenReturn(false);
+        when(dnaToTestMock.getDnaSequence()).thenReturn(SAMPLE_HUMAN_DNA);
 
         // Test
         try {
@@ -78,12 +72,9 @@ public class MutantDetectorServiceTest {
     @Test
     public void TestNonExistingDnaIsMutantTrue() {
         // Conditions
-        when(dnaRepositoryMock.getById(any()))
-                .thenReturn(null);
-        when(dnaRepositoryMock.save(any()))
-                .thenReturn(true);
-        when(mutantDetectorUtilMock.isMutant(SAMPLE_MUTANT_DNA))
-                .thenReturn(true);
+        when(dnaRepositoryMock.getById(any())).thenReturn(null);
+        when(dnaRepositoryMock.save(any())).thenReturn(true);
+        when(mutantDetectorUtilMock.isMutant(SAMPLE_MUTANT_DNA)).thenReturn(true);
 
         // Test
         try {
@@ -99,12 +90,9 @@ public class MutantDetectorServiceTest {
     @Test
     public void TestNonExistingDnaIsMutantFalse() {
         // Conditions
-        when(dnaRepositoryMock.getById(any()))
-                .thenReturn(null);
-        when(dnaRepositoryMock.save(any()))
-                .thenReturn(true);
-        when(mutantDetectorUtilMock.isMutant(SAMPLE_MUTANT_DNA))
-                .thenReturn(false);
+        when(dnaRepositoryMock.getById(any())).thenReturn(null);
+        when(dnaRepositoryMock.save(any())).thenReturn(true);
+        when(mutantDetectorUtilMock.isMutant(SAMPLE_MUTANT_DNA)).thenReturn(false);
 
         // Test
         try {
@@ -120,12 +108,9 @@ public class MutantDetectorServiceTest {
     @Test
     public void TestNonExistingDnaIsMutantNoSaved() {
         // Conditions
-        when(dnaRepositoryMock.getById(any()))
-                .thenReturn(null);
-        when(dnaRepositoryMock.save(any()))
-                .thenReturn(false);
-        when(mutantDetectorUtilMock.isMutant(SAMPLE_MUTANT_DNA))
-                .thenReturn(true);
+        when(dnaRepositoryMock.getById(any())).thenReturn(null);
+        when(dnaRepositoryMock.save(any())).thenReturn(false);
+        when(mutantDetectorUtilMock.isMutant(SAMPLE_MUTANT_DNA)).thenReturn(true);
         // Test
         try {
             var isMutant = mutantDetectorService.isMutant(SAMPLE_MUTANT_DNA);

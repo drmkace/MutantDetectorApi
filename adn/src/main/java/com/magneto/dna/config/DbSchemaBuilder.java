@@ -4,6 +4,7 @@ import com.magneto.dna.service.StatService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
@@ -20,12 +21,12 @@ public class DbSchemaBuilder {
     private final DynamoDbClient dbClient;
     private final StatService statService;
 
-
     @Autowired
-    public DbSchemaBuilder(StatService statService) {
+    public DbSchemaBuilder(StatService statService,
+                           Environment environment) {
         this.statService = statService;
         this.dbClient = DynamoDbClient.builder()
-                .region(Region.US_EAST_2)
+                .region(Region.of(environment.getProperty(Constants.CONF_DYNAMODB_REGION)))
                 .build();
     }
 

@@ -1,0 +1,73 @@
+package com.magneto.dna.repository;
+
+import com.magneto.dna.config.Constants;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.MockitoJUnitRunner;
+import redis.clients.jedis.Jedis;
+
+import static org.mockito.Mockito.*;
+
+@RunWith(MockitoJUnitRunner.class)
+public class StatRepositoryTest {
+
+    @Mock
+    Jedis cache;
+
+    @InjectMocks
+    StatRepository statRepository;
+
+    @Test
+    public void incrementHumanCountExistsSuccess() {
+        //Conditions
+        when(cache.exists(Constants.STAT_HUMAN_COUNT)).thenReturn(true);
+        when(cache.get(Constants.STAT_HUMAN_COUNT)).thenReturn("1");
+
+        //Test
+        statRepository.IncrementHumanCount();
+
+        //Verifies
+        verify(cache).get(Constants.STAT_HUMAN_COUNT);
+    }
+
+    @Test
+    public void incrementHumanCountNoExistsSuccess() {
+        //Conditions
+        when(cache.exists(Constants.STAT_HUMAN_COUNT)).thenReturn(false);
+        when(cache.set(Constants.STAT_HUMAN_COUNT,"1")).thenReturn("1");
+
+        //Test
+        statRepository.IncrementHumanCount();
+
+        //Verifies
+        verify(cache).set(Constants.STAT_HUMAN_COUNT,"1");
+    }
+
+    @Test
+    public void incrementMutantCountExistsSuccess() {
+        //Conditions
+        when(cache.exists(Constants.STAT_MUTANT_COUNT)).thenReturn(true);
+        when(cache.get(Constants.STAT_MUTANT_COUNT)).thenReturn("1");
+
+        //Test
+        statRepository.IncrementMutantCount();
+
+        //Verifies
+        verify(cache).get(Constants.STAT_MUTANT_COUNT);
+    }
+
+    @Test
+    public void incrementMutantCountNoExistsSuccess() {
+        //Conditions
+        when(cache.exists(Constants.STAT_MUTANT_COUNT)).thenReturn(false);
+        when(cache.set(Constants.STAT_MUTANT_COUNT,"1")).thenReturn("1");
+
+        //Test
+        statRepository.IncrementMutantCount();
+
+        //Verifies
+        verify(cache).set(Constants.STAT_MUTANT_COUNT,"1");
+    }
+}

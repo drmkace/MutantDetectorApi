@@ -2,71 +2,82 @@ package com.magneto.dna.repository;
 
 import com.magneto.dna.entity.Stat;
 import com.magneto.dna.config.Constants;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Repository;
-
-import java.util.HashMap;
+import redis.clients.jedis.Jedis;
 
 @Repository
 public class StatRepository {
 
-    private static final HashMap<String, Long> cache = new HashMap<>();
+    private static final Logger logger = LoggerFactory.getLogger(StatRepository.class);
+
+    private Jedis cache;
+
+    public StatRepository() {
+/*
+        if(env.getProperty(Constants.CONF_REDIS_HOST) != null) {
+            this.cache = new Jedis(
+               env.getProperty(Constants.CONF_REDIS_HOST),
+               Integer.parseInt(env.getProperty(Constants.CONF_REDIS_PORT)));
+        } else {
+*/
+        this.cache = new Jedis("localhost");
+//        }
+    }
 
     public void IncrementHumanCount() {
         try {
-            synchronized(cache) {
-                if(cache.containsKey(Constants.STAT_HUMAN_COUNT)) {
-                    var cachedCount= cache.get(Constants.STAT_HUMAN_COUNT);
+            synchronized(this.cache) {
+                if(this.cache.exists(Constants.STAT_HUMAN_COUNT)) {
+                    var cachedCount= Long.parseLong(cache.get (Constants.STAT_HUMAN_COUNT));
                     cachedCount++;
-                    cache.put(Constants.STAT_HUMAN_COUNT, cachedCount);
-                }
-                else
-                {
-                    cache.put(Constants.STAT_HUMAN_COUNT, 1L);
+                    this.cache.set(Constants.STAT_HUMAN_COUNT, Long.toString(cachedCount));
+                } else {
+                    this.cache.set(Constants.STAT_HUMAN_COUNT, "1");
                 }
             }
         } catch(Exception ex) {
-            // TODO: Log Exception
+            logger.error(ex.getMessage(), ex);
         }
     }
 
     public void IncrementMutantCount() {
         try {
-            synchronized(cache) {
-                if(cache.containsKey(Constants.STAT_MUTANT_COUNT)) {
-                    var cachedCount= cache.get(Constants.STAT_MUTANT_COUNT);
+            synchronized (this.cache) {
+                if(this.cache.exists(Constants.STAT_MUTANT_COUNT)) {
+                    var cachedCount= Long.parseLong(cache.get (Constants.STAT_MUTANT_COUNT));
                     cachedCount++;
-                    cache.put(Constants.STAT_MUTANT_COUNT, cachedCount);
-                }
-                else
-                {
-                    cache.put(Constants.STAT_MUTANT_COUNT, 1L);
+                    this.cache.set(Constants.STAT_MUTANT_COUNT, Long.toString(cachedCount));
+                } else {
+                    this.cache.set(Constants.STAT_MUTANT_COUNT, "1");
                 }
             }
         } catch(Exception ex) {
-            // TODO: Log Exception
+            logger.error(ex.getMessage(), ex);
         }
     }
 
     public void save(Stat entity) {
         try {
-            synchronized(cache) {
-                cache.put(Constants.STAT_MUTANT_COUNT, entity.getMutantCount());
-                cache.put(Constants.STAT_HUMAN_COUNT, entity.getHumanCount());
+            synchronized (this.cache) {
+                this.cache.set(Constants.STAT_HUMAN_COUNT, Long.toString(entity.getHumanCount()));
+                this.cache.set(Constants.STAT_MUTANT_COUNT, Long.toString(entity.getMutantCount()));
             }
         } catch(Exception ex) {
-            // TODO: Log Exception
+            logger.error(ex.getMessage(), ex);
         }
     }
 
     public Stat tryGet() {
         try {
-            synchronized(cache) {
-                return new Stat(
-                        cache.get(Constants.STAT_HUMAN_COUNT),
-                        cache.get(Constants.STAT_MUTANT_COUNT));
-            }
+            return new Stat(
+                    Long.parseLong(this.cache.get(Constants.STAT_HUMAN_COUNT)),
+                    Long.parseLong(this.cache.get(Constants.STAT_MUTANT_COUNT)));
         } catch(Exception ex) {
-            // TODO: Log Exception
+            logger.error(ex.getMessage(), ex);
             return null;
         }
     }

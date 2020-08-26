@@ -28,8 +28,7 @@ public class StatServiceTest {
         //Conditions
         var mockStat = mock(Stat.class);
 
-        when(stateRepositoryMock.tryGet())
-            .thenReturn((mockStat));
+        when(stateRepositoryMock.tryGet()).thenReturn((mockStat));
 
         //Test
         var stat = statService.get();
@@ -42,8 +41,6 @@ public class StatServiceTest {
     @Test
     public void GetReturnsDataFromDnaRepository() {
         //Conditions
-        var mockStat = mock(Stat.class);
-
         when(stateRepositoryMock.tryGet()).thenReturn((null));
         when(dnaRepositoryMock.getHumanCount()).thenReturn(10L);
         when(dnaRepositoryMock.getMutantCount()).thenReturn(10L);

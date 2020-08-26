@@ -2,11 +2,17 @@ package com.magneto.dna.repository;
 
 import com.magneto.dna.config.Constants;
 import com.magneto.dna.entity.Dna;
+import org.junit.Before;
 import org.junit.Test;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
+import org.springframework.core.env.Environment;
+import org.springframework.mock.env.MockEnvironment;
+import org.springframework.test.context.event.annotation.BeforeTestClass;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.*;
 
@@ -22,6 +28,9 @@ public class DnaRepositoryTest {
 
     @Mock
     DynamoDbClient dbClient;
+
+//    @Mock
+//    Environment environmentMock;
 
     @InjectMocks
     DnaRepository dnaRepository;
@@ -56,14 +65,11 @@ public class DnaRepositoryTest {
         assert (!result);
     }
 
-
     @Test
     public void getByIdEmptyItemReturnsNull() {
         //Conditions
-        var dnaEntityMock = mock(Dna.class);
         var itemMock = mock(HashMap.class);
         var getItemResponseMock = mock(GetItemResponse.class);
-        var attributeMock = mock(AttributeValue.class);
 
         when(dbClient.getItem(any(GetItemRequest.class))).thenReturn(getItemResponseMock);
         when(getItemResponseMock.item()).thenReturn(itemMock);
@@ -79,10 +85,7 @@ public class DnaRepositoryTest {
     @Test
     public void getByIdNullItemReturnsNull() {
         //Conditions
-        var dnaEntityMock = mock(Dna.class);
-        var itemMock = mock(HashMap.class);
         var getItemResponseMock = mock(GetItemResponse.class);
-        var attributeMock = mock(AttributeValue.class);
 
         when(dbClient.getItem(any(GetItemRequest.class))).thenReturn(getItemResponseMock);
         when(getItemResponseMock.item()).thenReturn(null);
@@ -97,7 +100,6 @@ public class DnaRepositoryTest {
     @Test
     public void getByIdReturnsDnaEntitySuccess() {
         //Conditions
-        var dnaEntityMock = mock(Dna.class);
         var itemMock = mock(HashMap.class);
         var getItemResponseMock = mock(GetItemResponse.class);
         var attributeMock = mock(AttributeValue.class);
@@ -150,7 +152,6 @@ public class DnaRepositoryTest {
     @Test
     public void getHumanCountThrowDynamoDbException() {
         //Conditions
-
         when(dbClient.scan(any(ScanRequest.class))).thenThrow(DynamoDbException.class);
 
         //Test
@@ -163,7 +164,6 @@ public class DnaRepositoryTest {
     @Test
     public void getMutantCountThrowDynamoDbException() {
         //Conditions
-
         when(dbClient.scan(any(ScanRequest.class))).thenThrow(DynamoDbException.class);
 
         //Test
