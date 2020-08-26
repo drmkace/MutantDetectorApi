@@ -26,7 +26,7 @@ public class DbSchemaBuilder {
                            Environment environment) {
         this.statService = statService;
         this.dbClient = DynamoDbClient.builder()
-                .region(Region.of(environment.getProperty(Constants.CONF_DYNAMODB_REGION)))
+                .region(Region.US_EAST_2)
                 .build();
     }
 

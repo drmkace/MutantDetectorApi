@@ -14,7 +14,7 @@ public class StatRepository {
 
     private static final Logger logger = LoggerFactory.getLogger(StatRepository.class);
 
-    private Jedis cache;
+    private final Jedis cache;
 
     @Autowired
     public StatRepository(AppConfig config) {

@@ -21,17 +21,9 @@ public class DnaRepository {
     private DynamoDbClient dbClient;
 
     public DnaRepository() {
-/*
-        if(env.getProperty(Constants.CONF_DYNAMODB_REGION) != null) {
-            this.dbClient = DynamoDbClient.builder()
-                .region(Region.of(env.getProperty(Constants.CONF_DYNAMODB_REGION)))
-                .build();
-        } else {
-*/
         this.dbClient = DynamoDbClient.builder()
-                    .region(Region.US_EAST_2)
-                    .build();
-//        }
+            .region(Region.US_EAST_2)
+            .build();
     }
 
     public boolean save(Dna dnaEntity) {
