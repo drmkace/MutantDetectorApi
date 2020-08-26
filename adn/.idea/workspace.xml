@@ -22,7 +22,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7b9dbbb-e68d-4fee-ad4a-8764445732ed" name="Default Changelist" comment="" />
+    <list default="true" id="c7b9dbbb-e68d-4fee-ad4a-8764445732ed" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -371,6 +374,12 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/adn$All_in_adn.ic" NAME="All in adn Coverage Results" MODIFIED="1598453804165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/adn$All_in_Dna.exec" NAME="All in Dna Coverage Results" MODIFIED="1598473466360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.magneto.dna.*</FILTER>
+      <EXCLUDED_FILTER>com.magneto.dna.config.*</EXCLUDED_FILTER>
+      <EXCLUDED_FILTER>com.magneto.dna.dto.*</EXCLUDED_FILTER>
+      <EXCLUDED_FILTER>com.magneto.dna.entity.*</EXCLUDED_FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/adn$All_in_adn.exec" NAME="All in adn Coverage Results" MODIFIED="1598464942817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.magneto.dna.*</FILTER>
       <EXCLUDED_FILTER>com.magneto.dna.config.*</EXCLUDED_FILTER>
