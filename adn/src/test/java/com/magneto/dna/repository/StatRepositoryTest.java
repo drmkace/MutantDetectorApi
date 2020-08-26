@@ -1,6 +1,7 @@
 package com.magneto.dna.repository;
 
 import com.magneto.dna.config.Constants;
+import com.magneto.dna.entity.Stat;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
@@ -70,4 +71,36 @@ public class StatRepositoryTest {
         //Verifies
         verify(cache).set(Constants.STAT_MUTANT_COUNT,"1");
     }
+
+    @Test
+    public void tryGetSuccess() {
+        //Conditions
+        when(cache.get(Constants.STAT_HUMAN_COUNT)).thenReturn("10");
+        when(cache.get(Constants.STAT_MUTANT_COUNT)).thenReturn("20");
+
+        //Test
+        var stat = statRepository.tryGet();
+
+        //Verifies
+        assert (stat.getHumanCount() == 10);
+        assert (stat.getMutantCount() == 20);
+        verify(cache).get(Constants.STAT_HUMAN_COUNT);
+        verify(cache).get(Constants.STAT_MUTANT_COUNT);
+    }
+
+    @Test
+    public void saveSuccess() {
+        //Conditions
+        var stat = new Stat(10, 20);
+        when(cache.set(Constants.STAT_HUMAN_COUNT, "10")).thenReturn("10");
+        when(cache.set(Constants.STAT_MUTANT_COUNT, "20")).thenReturn("20");
+
+        //Test
+        statRepository.save(stat);
+
+        //Verifies
+        verify(cache).set(Constants.STAT_HUMAN_COUNT, "10");
+        verify(cache).set(Constants.STAT_MUTANT_COUNT, "20");
+    }
+
 }
