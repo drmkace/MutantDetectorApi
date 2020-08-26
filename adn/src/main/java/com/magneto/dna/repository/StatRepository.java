@@ -1,9 +1,11 @@
 package com.magneto.dna.repository;
 
+import com.magneto.dna.config.AppConfig;
 import com.magneto.dna.entity.Stat;
 import com.magneto.dna.config.Constants;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import redis.clients.jedis.Jedis;
 
@@ -14,8 +16,13 @@ public class StatRepository {
 
     private Jedis cache;
 
-    public StatRepository() {
-        this.cache = new Jedis("localhost");
+    @Autowired
+    public StatRepository(AppConfig config) {
+        this.cache = new Jedis(config.getRedisHost(), config.getRedisPort());
+    }
+
+    public StatRepository(Jedis cache) {
+        this.cache = cache;
     }
 
     public void IncrementHumanCount() {
