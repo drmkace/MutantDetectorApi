@@ -15,15 +15,7 @@ public class StatRepository {
     private Jedis cache;
 
     public StatRepository() {
-/*
-        if(env.getProperty(Constants.CONF_REDIS_HOST) != null) {
-            this.cache = new Jedis(
-               env.getProperty(Constants.CONF_REDIS_HOST),
-               Integer.parseInt(env.getProperty(Constants.CONF_REDIS_PORT)));
-        } else {
-*/
         this.cache = new Jedis("localhost");
-//        }
     }
 
     public void IncrementHumanCount() {
