@@ -10,6 +10,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 @Service
 public class MutantDetectorService {
     private static final Logger logger = LoggerFactory.getLogger(MutantDetectorService.class);
@@ -58,8 +61,26 @@ public class MutantDetectorService {
     }
 
     private void validateDna(String[] dna) throws InvalidDnaException {
+        validateEmptyDnaSample(dna);
+        validateDnaLength(dna);
+    }
+
+    private void validateEmptyDnaSample(String[] dna) throws InvalidDnaException {
         if (dna == null || dna.length == 0) {
             throw new InvalidDnaException();
+        }
+    }
+
+    private void validateDnaLength(String[] dna) throws InvalidDnaException {
+        var rowLength = dna.length;
+        var dnaPattern = Pattern.compile("^[ATGC]+");
+        for(var i = 0; i < dna.length; i++) {
+            if(dna[i].length() != rowLength) {
+                throw new InvalidDnaException();
+            }
+            if(!dnaPattern.matcher(dna[i]).matches()) {
+                throw new InvalidDnaException();
+            }
         }
     }
 }

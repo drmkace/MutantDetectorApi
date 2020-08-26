@@ -20,6 +20,8 @@ public class MutantDetectorServiceTest {
     final static String[] SAMPLE_HUMAN_DNA =  {"ACTG", "CTGA", "AAGT", "TTGC"};
     final static String[] SAMPLE_INVALID_EMPTY_DNA =  {};
     final static String[] SAMPLE_INVALID_NULL_DNA =  null;
+    final static String[] SAMPLE_INVALID_LENGTH_DNA = {"ACT", "AAA", "AAAT"};
+    final static String[] SAMPLE_INVALID_CHARS_DNA = {"ACT", "CPA", "ART"};;
 
     @Mock
     MutantDetectorUtil mutantDetectorUtilMock;
@@ -141,6 +143,32 @@ public class MutantDetectorServiceTest {
         // Test
         try {
             mutantDetectorService.isMutant(SAMPLE_INVALID_NULL_DNA);
+            assert (false);
+        } catch (InvalidDnaException e) {
+            // verifies
+            assert (true);
+        }
+    }
+
+    @Test
+    public void TestIncorrectLengthDnaThrowsInvalidDnaException() {
+
+        // Test
+        try {
+            mutantDetectorService.isMutant(SAMPLE_INVALID_LENGTH_DNA);
+            assert (false);
+        } catch (InvalidDnaException e) {
+            // verifies
+            assert (true);
+        }
+    }
+
+    @Test
+    public void TestInvalidDnaCharactersThrowsInvalidDnaException() {
+
+        // Test
+        try {
+            mutantDetectorService.isMutant(SAMPLE_INVALID_CHARS_DNA);
             assert (false);
         } catch (InvalidDnaException e) {
             // verifies

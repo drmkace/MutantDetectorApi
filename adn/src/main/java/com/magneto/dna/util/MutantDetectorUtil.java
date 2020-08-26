@@ -51,14 +51,11 @@ public class MutantDetectorUtil {
 
     private long getCrossMatchCount(String[] dna, long currentMatchCount) {
         long matchCount = 0;
-//        for(var colIndex = 0; colIndex < dnaMatrix.length - (MATCH_LENGTH - 1) && !this.isVerificationCompleted(matchCount + currentMatchCount); colIndex ++)
-//        {
         int colIndex = 0;
         matchCount += this.getLeftToRightFromTopMatchCount(dna, colIndex, currentMatchCount);
         if (!this.isVerificationCompleted(currentMatchCount + matchCount)) {
             matchCount += this.getLeftToRightFromBottomMatchCount(dna, colIndex,currentMatchCount + matchCount);
         }
-        //       }
         return matchCount;
     }
 
