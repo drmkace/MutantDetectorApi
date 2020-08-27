@@ -18,7 +18,7 @@ _Api Rest para detección de ADN Mutante para Magento_
 ## Ambiente Local
 - Generacion de Paquete:
 ```mvnw clean package```
-_en la generacion del paquete se generan ejecutan los test uinitarios con una cobertura de la prueba mayor al 80%
+_en la generacion del paquete se generan ejecutan los test uinitarios con una cobertura de la prueba mayor al 80%_
 
 para intelliJ IDEA hay dos configuraciones disponibles:
  - DnaApplication: Aplicacion Java
