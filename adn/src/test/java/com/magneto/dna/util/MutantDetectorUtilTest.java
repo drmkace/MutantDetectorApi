@@ -13,14 +13,14 @@ public class MutantDetectorUtilTest {
 
     @Test
     public void DnaWithMutantSequenceInRowsIsMutantTrue() {
-        var dnaToTest = new String[] {"AAAATT", "TAGCT", "GATCTT", "CGGAGT", "AACAGA", "TTTTCT"};
+        var dnaToTest = new String[] {"------", "------", "------", "------", "AAAAGG", "CCCCTT"};
         var isMutant = mutantDetectorUtil.isMutant(dnaToTest);
         assert (isMutant);
     }
 
     @Test
     public void DnaWithMutantSequenceInColsIsMutantTrue() {
-        var dnaToTest = new String[] {"A----T", "A----T", "A----T", "A----T", "A----T", "A----T"};
+        var dnaToTest = new String[] {"A--T", "A--T", "A--T", "A--T"};
         var isMutant = mutantDetectorUtil.isMutant(dnaToTest);
         assert (isMutant);
     }

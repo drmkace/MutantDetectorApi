@@ -23,8 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c7b9dbbb-e68d-4fee-ad4a-8764445732ed" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/magneto/dna/util/MutantDetectorUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/magneto/dna/util/MutantDetectorUtilTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,30 +214,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="555" y="167" key="FileChooserDialogImpl/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598218328604" />
-    <state width="1493" height="286" key="GridCell.Tab.0.bottom" timestamp="1598465906965">
+    <state width="1493" height="216" key="GridCell.Tab.0.bottom" timestamp="1598558825190">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="286" key="GridCell.Tab.0.bottom/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598465906965" />
     <state width="1237" height="277" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1598380503360" />
-    <state width="1493" height="286" key="GridCell.Tab.0.bottom/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598458608718" />
-    <state width="1493" height="286" key="GridCell.Tab.0.center" timestamp="1598465906965">
+    <state width="1493" height="216" key="GridCell.Tab.0.bottom/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598558825190" />
+    <state width="1493" height="216" key="GridCell.Tab.0.center" timestamp="1598558825190">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="286" key="GridCell.Tab.0.center/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598465906965" />
     <state width="1237" height="277" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1598380503360" />
-    <state width="1493" height="286" key="GridCell.Tab.0.center/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598458608718" />
-    <state width="1493" height="286" key="GridCell.Tab.0.left" timestamp="1598465906965">
+    <state width="1493" height="216" key="GridCell.Tab.0.center/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598558825190" />
+    <state width="1493" height="216" key="GridCell.Tab.0.left" timestamp="1598558825190">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="286" key="GridCell.Tab.0.left/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598465906965" />
     <state width="1237" height="277" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1598380503360" />
-    <state width="1493" height="286" key="GridCell.Tab.0.left/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598458608717" />
-    <state width="1493" height="286" key="GridCell.Tab.0.right" timestamp="1598465906965">
+    <state width="1493" height="216" key="GridCell.Tab.0.left/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598558825190" />
+    <state width="1493" height="216" key="GridCell.Tab.0.right" timestamp="1598558825190">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="286" key="GridCell.Tab.0.right/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598465906965" />
     <state width="1237" height="277" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1598380503360" />
-    <state width="1493" height="286" key="GridCell.Tab.0.right/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598458608718" />
+    <state width="1493" height="216" key="GridCell.Tab.0.right/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598558825190" />
     <state width="1493" height="267" key="GridCell.Tab.1.bottom" timestamp="1598457815186">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -374,7 +374,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/adn$All_in_adn.ic" NAME="All in adn Coverage Results" MODIFIED="1598453804165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/adn$All_in_Dna.exec" NAME="All in Dna Coverage Results" MODIFIED="1598473466360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/adn$All_in_Dna.exec" NAME="All in Dna Coverage Results" MODIFIED="1598553071997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.magneto.dna.*</FILTER>
       <EXCLUDED_FILTER>com.magneto.dna.config.*</EXCLUDED_FILTER>
       <EXCLUDED_FILTER>com.magneto.dna.dto.*</EXCLUDED_FILTER>
