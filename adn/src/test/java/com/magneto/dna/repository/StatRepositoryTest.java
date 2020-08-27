@@ -105,4 +105,44 @@ public class StatRepositoryTest {
         verify(cache).set(Constants.STAT_MUTANT_COUNT, "20");
     }
 
+    @Test
+    public void tryGetHasException() {
+        //Conditions
+        var statRepository = new StatRepository(cache);
+        when(cache.get(anyString())).thenReturn(null);
+
+        //Test
+        var stat = statRepository.tryGet();
+
+        //Verifies
+        assert (stat == null);
+    }
+
+    @Test
+    public void incrementHumanCountHasException() {
+        //Conditions
+        var statRepository = new StatRepository(cache);
+        when(cache.exists(Constants.STAT_HUMAN_COUNT)).thenReturn(true);
+        when(cache.get(Constants.STAT_HUMAN_COUNT)).thenReturn(null);
+
+        //Test
+        statRepository.IncrementHumanCount();
+
+        //Verifies
+        assert (true);
+    }
+
+    @Test
+    public void incrementMutantCountHasException() {
+        //Conditions
+        var statRepository = new StatRepository(cache);
+        when(cache.exists(Constants.STAT_MUTANT_COUNT)).thenReturn(true);
+        when(cache.get(Constants.STAT_MUTANT_COUNT)).thenReturn(null);
+
+        //Test
+        statRepository.IncrementHumanCount();
+
+        //Verifies
+        assert (true);
+    }
 }

@@ -143,6 +143,7 @@
 								<exclude>com/magneto/dna/config/*</exclude>
 								<exclude>com/magneto/dna/entity/*</exclude>
 								<exclude>com/magneto/dna/dto/*</exclude>
+								<exclude>com/magneto/dna/*</exclude>
 							</excludes>
 						</configuration>
 					</execution>

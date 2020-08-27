@@ -25,10 +25,7 @@
     <list default="true" id="c7b9dbbb-e68d-4fee-ad4a-8764445732ed" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/magneto/dna/repository/DnaRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/magneto/dna/repository/DnaRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/magneto/dna/repository/StatRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/magneto/dna/repository/StatRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/magneto/dna/service/MutantDetectorServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/magneto/dna/service/MutantDetectorServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/magneto/dna/service/StatServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/magneto/dna/service/StatServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/magneto/dna/util/MutantDetectorUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/magneto/dna/util/MutantDetectorUtilTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,31 +76,12 @@
       <recent name="C:\varios\meli\src\MutantDetectorApi\adn\.idea\runConfigurations" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DnaApplication">
+  <component name="RunManager" selected="JUnit.StatRepositoryTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="openjdk-14" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.magneto.dna.DnaApplication" />
       <shortenClasspath name="MANIFEST" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DnaRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="adn" />
-      <shortenClasspath name="MANIFEST" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.magneto.dna.repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.magneto.dna.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.magneto.dna.repository.DnaRepositoryTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -127,6 +105,82 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MutantDetectorUtilTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="adn" />
+      <shortenClasspath name="MANIFEST" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.magneto.dna.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.magneto.dna.util" />
+      <option name="MAIN_CLASS_NAME" value="com.magneto.dna.util.MutantDetectorUtilTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MutantDetectorUtilTest.DnaWithMutantSequenceInRowsIsMutantTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="adn" />
+      <shortenClasspath name="MANIFEST" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.magneto.dna.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.magneto.dna.util" />
+      <option name="MAIN_CLASS_NAME" value="com.magneto.dna.util.MutantDetectorUtilTest" />
+      <option name="METHOD_NAME" value="DnaWithMutantSequenceInRowsIsMutantTrue" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StatRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="adn" />
+      <shortenClasspath name="MANIFEST" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.magneto.dna.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.magneto.dna.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.magneto.dna.repository.StatRepositoryTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StatRepositoryTest.tryGetHasException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="adn" />
+      <shortenClasspath name="MANIFEST" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.magneto.dna.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.magneto.dna.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.magneto.dna.repository.StatRepositoryTest" />
+      <option name="METHOD_NAME" value="tryGetHasException" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <shortenClasspath name="MANIFEST" />
       <useClassPathOnly />
@@ -141,9 +195,20 @@
     <list>
       <item itemvalue="Application.DnaApplication" />
       <item itemvalue="JUnit.All in Dna" />
-      <item itemvalue="JUnit.DnaRepositoryTest" />
       <item itemvalue="JUnit.DnaRepositoryTest.saveSuccess" />
+      <item itemvalue="JUnit.MutantDetectorUtilTest.DnaWithMutantSequenceInRowsIsMutantTrue" />
+      <item itemvalue="JUnit.MutantDetectorUtilTest" />
+      <item itemvalue="JUnit.StatRepositoryTest.tryGetHasException" />
+      <item itemvalue="JUnit.StatRepositoryTest" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.StatRepositoryTest" />
+        <item itemvalue="JUnit.StatRepositoryTest.tryGetHasException" />
+        <item itemvalue="JUnit.MutantDetectorUtilTest" />
+        <item itemvalue="JUnit.MutantDetectorUtilTest.DnaWithMutantSequenceInRowsIsMutantTrue" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -259,54 +324,54 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="555" y="167" key="FileChooserDialogImpl/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598218328604" />
-    <state width="1493" height="216" key="GridCell.Tab.0.bottom" timestamp="1598558825190">
+    <state width="1493" height="216" key="GridCell.Tab.0.bottom" timestamp="1598561227698">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="286" key="GridCell.Tab.0.bottom/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598476043244" />
     <state width="1237" height="277" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1598380503360" />
-    <state width="1493" height="216" key="GridCell.Tab.0.bottom/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598558825190" />
-    <state width="1493" height="216" key="GridCell.Tab.0.center" timestamp="1598558825190">
+    <state width="1493" height="216" key="GridCell.Tab.0.bottom/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598561227698" />
+    <state width="1493" height="216" key="GridCell.Tab.0.center" timestamp="1598561227698">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="286" key="GridCell.Tab.0.center/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598476043244" />
     <state width="1237" height="277" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1598380503360" />
-    <state width="1493" height="216" key="GridCell.Tab.0.center/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598558825190" />
-    <state width="1493" height="216" key="GridCell.Tab.0.left" timestamp="1598558825190">
+    <state width="1493" height="216" key="GridCell.Tab.0.center/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598561227698" />
+    <state width="1493" height="216" key="GridCell.Tab.0.left" timestamp="1598561227698">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="286" key="GridCell.Tab.0.left/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598476043244" />
     <state width="1237" height="277" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1598380503360" />
-    <state width="1493" height="286" key="GridCell.Tab.0.left/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598553072103" />
-    <state width="1493" height="286" key="GridCell.Tab.0.right" timestamp="1598553072103">
+    <state width="1493" height="216" key="GridCell.Tab.0.left/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598561227698" />
+    <state width="1493" height="216" key="GridCell.Tab.0.right" timestamp="1598561227698">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="286" key="GridCell.Tab.0.right/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598476043244" />
     <state width="1237" height="277" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1598380503360" />
-    <state width="1493" height="286" key="GridCell.Tab.0.right/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598553072103" />
-    <state width="1493" height="267" key="GridCell.Tab.1.bottom" timestamp="1598543007047">
+    <state width="1493" height="216" key="GridCell.Tab.0.right/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598561227698" />
+    <state width="1493" height="267" key="GridCell.Tab.1.bottom" timestamp="1598561174861">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="746" height="221" key="GridCell.Tab.1.bottom/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598221321773" />
     <state width="1237" height="277" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1598380503360" />
-    <state width="1493" height="267" key="GridCell.Tab.1.bottom/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598543007047" />
-    <state width="1493" height="267" key="GridCell.Tab.1.center" timestamp="1598543007046">
+    <state width="1493" height="267" key="GridCell.Tab.1.bottom/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598561174861" />
+    <state width="1493" height="267" key="GridCell.Tab.1.center" timestamp="1598561174861">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="746" height="221" key="GridCell.Tab.1.center/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598221321773" />
     <state width="1237" height="277" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1598380503360" />
-    <state width="1493" height="267" key="GridCell.Tab.1.center/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598543007046" />
-    <state width="1493" height="267" key="GridCell.Tab.1.left" timestamp="1598543007046">
+    <state width="1493" height="267" key="GridCell.Tab.1.center/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598561174861" />
+    <state width="1493" height="267" key="GridCell.Tab.1.left" timestamp="1598561174860">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="746" height="221" key="GridCell.Tab.1.left/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598221321773" />
     <state width="1237" height="277" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1598380503360" />
-    <state width="1493" height="267" key="GridCell.Tab.1.left/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598543007046" />
-    <state width="1493" height="267" key="GridCell.Tab.1.right" timestamp="1598543007046">
+    <state width="1493" height="267" key="GridCell.Tab.1.left/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598561174860" />
+    <state width="1493" height="267" key="GridCell.Tab.1.right" timestamp="1598561174861">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="746" height="221" key="GridCell.Tab.1.right/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598221321773" />
     <state width="1237" height="277" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1598380503360" />
-    <state width="1493" height="267" key="GridCell.Tab.1.right/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598543007046" />
+    <state width="1493" height="267" key="GridCell.Tab.1.right/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598561174861" />
     <state x="146" y="0" key="Maven.ArtifactSearchDialog" timestamp="1598448917156">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -354,12 +419,12 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598456301526" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1598450500900">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1598561089836">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="431" y="145" width="807" height="679" key="search.everywhere.popup/-3840.-365.1280.703/0.0.1536.824@0.0.1536.824" timestamp="1598216485672" />
     <state x="359" y="120" width="672" height="560" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1598379380905" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598450500900" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/1920.0.1280.687/0.0.1536.824@0.0.1536.824" timestamp="1598561089836" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -380,34 +445,9 @@
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/magneto/dna/repository/StatRepositoryTest.java</url>
-          <line>100</line>
-          <option name="timeStamp" value="92" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/magneto/dna/repository/StatRepository.java</url>
           <line>20</line>
           <option name="timeStamp" value="101" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/magneto/dna/repository/StatRepository.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="102" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/magneto/dna/repository/StatRepository.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="104" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/magneto/dna/repository/StatRepository.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="105" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/magneto/dna/repository/StatRepository.java</url>
-          <line>72</line>
-          <option name="timeStamp" value="106" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -431,14 +471,23 @@
       <EXCLUDED_FILTER>com.magneto.dna.dto.*</EXCLUDED_FILTER>
       <EXCLUDED_FILTER>com.magneto.dna.entity.*</EXCLUDED_FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/adn$StatRepositoryTest.ic" NAME="StatRepositoryTest Coverage Results" MODIFIED="1598561227642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.magneto.dna.repository.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/adn$com_magneto_dna_service_in_adn.ic" NAME="com.magneto.dna.service in adn Coverage Results" MODIFIED="1598309587728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.magneto.dna.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/adn$MutantDetectorUtilTest.ic" NAME="MutantDetectorUtilTest Coverage Results" MODIFIED="1598560346684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.magneto.dna.util.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/adn$MutantDetectorServiceTest_TestDnaExistingIsMutantTrue.ic" NAME="MutantDetectorServiceTest.TestDnaExistingIsMutantTrue Coverage Results" MODIFIED="1598303078677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.magneto.adn.service.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/adn$MutantDetectorServiceTest.ic" NAME="MutantDetectorServiceTest Coverage Results" MODIFIED="1598302460973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.magneto.adn.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/adn$MutantDetectorUtilTest_DnaWithMutantSequenceInRowsIsMutantTrue.ic" NAME="MutantDetectorUtilTest.DnaWithMutantSequenceInRowsIsMutantTrue Coverage Results" MODIFIED="1598560040193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.magneto.dna.util.*</FILTER>
     </SUITE>
   </component>
 </project>
