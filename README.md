@@ -24,8 +24,8 @@ para intelliJ IDEA hay dos configuraciones disponibles:
  - DnaApplication: Aplicacion Java
  - All in Dna: Test _Unitarios
  
- # Test Unitarios
- - Ejecucion
+ ## Test Unitarios
+ - Ejecucion:
 ```mvnw clean package```
 esto genera el archivo ```/target/site/index.html``` con el resultado de la cobertura de la prueba utilizando JaCoCo
 Tambien se puede ejecutar desde intelliJ IDEA con la configuración "All In Dna" 
@@ -43,3 +43,6 @@ De los test unitarios se excluyeron los siguientes packages:
 - Base de Datos: DymamoDB (Base de datos documental de AWS para almacenar las muestras de ADN)
 - Container EC2 con tomcat ejecutando la aplicacion JAVA
 - Container EC2 ejecuntando una instancia de REDIS (BD para guardar las estadisticas)
+
+## Autor
+Fernando Acevedo ([drmkace@yahoo.com.ar](mailto:drmkace@yahoo.com.ar))
