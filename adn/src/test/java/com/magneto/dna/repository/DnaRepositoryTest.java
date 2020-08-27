@@ -2,17 +2,11 @@ package com.magneto.dna.repository;
 
 import com.magneto.dna.config.Constants;
 import com.magneto.dna.entity.Dna;
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.junit.MockitoJUnitRunner;
-import org.springframework.core.env.Environment;
-import org.springframework.mock.env.MockEnvironment;
-import org.springframework.test.context.event.annotation.BeforeTestClass;
+import org.mockito.junit.jupiter.MockitoExtension;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.*;
 
@@ -21,16 +15,13 @@ import java.util.HashMap;
 
 import static org.mockito.Mockito.*;
 
-@RunWith(MockitoJUnitRunner.class)
+@ExtendWith(MockitoExtension.class)
 public class DnaRepositoryTest {
 
     final static String[] SAMPLE_MUTANT_DNA = {"AAAA", "AAAA", "AAAA", "AAAA"};
 
     @Mock
     DynamoDbClient dbClient;
-
-//    @Mock
-//    Environment environmentMock;
 
     @InjectMocks
     DnaRepository dnaRepository;
