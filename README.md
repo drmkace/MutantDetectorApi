@@ -25,21 +25,22 @@ para intelliJ IDEA hay dos configuraciones disponibles:
  - All in Dna: Test _Unitarios
  
  ## Test Unitarios
- - Ejecucion:
-```mvnw clean package```
-esto genera el archivo ```/target/site/index.html``` con el resultado de la cobertura de la prueba utilizando JaCoCo
+ - Ejecucion: 
+ desde el directorio de la aplicacion ejecutar
+```mvnw clean package``` en windows o ```mvn clean package``` en linux 
+esto genera el archivo ```/target/adn-0.0.1-SNAPSHOT.jar``` y el archivo ```/target/site/index.html``` con el resultado de la cobertura de la prueba utilizando JaCoCo
 Tambien se puede ejecutar desde intelliJ IDEA con la configuración "All In Dna" 
 
 De los test unitarios se excluyeron los siguientes packages:
- - com.magneto.dna.config (clases de configuración)
- - com.magneto.dna.entity (entidades)
- - com.magneto.dna.dto (dtos de la APi)
+ - ```com.magneto.dna.config``` (clases de configuración)
+ - ```com.magneto.dna.entity``` (entidades)
+ - ```com.magneto.dna.dto``` (dtos de la APi)
  Estos fueron excluidos ya que no sumaba valor realizar test unitarios de las clases que componen dicho paquete
 
 ## Implementación Actual
 - Proveedor: AWS
-- Url Base Api: http://ec2-18-220-184-47.us-east-2.compute.amazonaws.com:8080
-- Documentacion Api: http://ec2-18-220-184-47.us-east-2.compute.amazonaws.com:8080/swagger-ui.html#/
+- Url Base Api: http://ec2-18-222-172-215.us-east-2.compute.amazonaws.com:8080
+- Documentacion Api: http://ec2-18-222-172-215.us-east-2.compute.amazonaws.com:8080/swagger-ui.html#/
 - Base de Datos: DymamoDB (Base de datos documental de AWS para almacenar las muestras de ADN)
 - Container EC2 con tomcat ejecutando la aplicacion JAVA
 - Container EC2 ejecuntando una instancia de REDIS (BD para guardar las estadisticas)
