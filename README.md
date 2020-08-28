@@ -13,19 +13,9 @@ _Api Rest para detección de ADN Mutante para Magento_
  - [Redis](https://redis.io)
 
 ## Modo de Uso
-- Documentacion Api: http://ec2-18-220-184-47.us-east-2.compute.amazonaws.com:8080/swagger-ui.html#/
+- Documentacion Api: http://ec2-18-222-172-215.us-east-2.compute.amazonaws.com:8080/swagger-ui.html#/
 
-## Ambiente Local
-- Generacion de Paquete:
-```mvnw clean package```
-_en la generacion del paquete se generan ejecutan los test uinitarios con una cobertura de la prueba mayor al 80%_
-
-para intelliJ IDEA hay dos configuraciones disponibles:
- - DnaApplication: Aplicacion Java
- - All in Dna: Test _Unitarios
- 
- ## Test Unitarios
- - Ejecucion: 
+## Generacion de Paquete y Test Coverage
  desde el directorio de la aplicacion ejecutar
 ```mvnw clean package``` en windows o ```mvn clean package``` en linux 
 esto genera el archivo ```/target/adn-0.0.1-SNAPSHOT.jar``` y el archivo ```/target/site/index.html``` con el resultado de la cobertura de la prueba utilizando JaCoCo
@@ -36,6 +26,11 @@ De los test unitarios se excluyeron los siguientes packages:
  - ```com.magneto.dna.entity``` (entidades)
  - ```com.magneto.dna.dto``` (dtos de la APi)
  Estos fueron excluidos ya que no sumaba valor realizar test unitarios de las clases que componen dicho paquete
+
+para intelliJ IDEA hay dos configuraciones disponibles:
+ - DnaApplication: Aplicacion Java
+ - All in Dna: Test Unitarios
+ 
 
 ## Implementación Actual
 - Proveedor: AWS
