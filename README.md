@@ -30,7 +30,20 @@ De los test unitarios se excluyeron los siguientes packages:
 para intelliJ IDEA hay dos configuraciones disponibles:
  - DnaApplication: Aplicacion Java
  - All in Dna: Test Unitarios
- 
+
+## Ambiente Local (IntelliJ IDEA)
+1. Abrir o Importar Archvo\
+ ![menu importar archivo](/images/import_001.png)
+2. Seleccionar el archivo pom.xlm que se encuantra el el directorio del proyecto\
+ ![menu_seleccionar_pom](/images/import_002.png)
+3. Abrir como Proyecto\
+ ![menu_abrir_proyecto](/images/import_003.png)
+
+4. El proyecto dispone de 2 configuraciones:
+ 4.1 ```DnaApplication``` (Aplicacion Java)
+ 4.2 ```All in Dna``` (Test Unitarios)
+ ![menu_configuraciones](/images/config_001.png\
+ ![menu_configuraciones](/images/config_002.png)\
 
 ## Implementación Actual
 - Proveedor: AWS
