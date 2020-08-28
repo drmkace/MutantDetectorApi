@@ -18,7 +18,7 @@ _Api Rest para detección de ADN Mutante para Magento_
 ## Generacion de Paquete y Test Coverage
  desde el directorio de la aplicacion ejecutar
 ```mvnw clean package``` en windows o ```mvn clean package``` en linux 
-esto genera el archivo ```/target/adn-0.0.1-SNAPSHOT.jar``` y el archivo ```/target/site/index.html``` con el resultado de la cobertura de la prueba utilizando JaCoCo
+esto genera el archivo ```/target/adn-0.0.1-SNAPSHOT.jar``` y el archivo ```/target/site/jacoco/index.html``` con el resultado de la cobertura de la prueba utilizando JaCoCo
 Tambien se puede ejecutar desde intelliJ IDEA con la configuración "All In Dna" 
 
 De los test unitarios se excluyeron los siguientes packages:
